@@ -17,10 +17,10 @@ REM Step 5: Add all files to git
 git add .
 
 REM Step 6: Check if a commit message was passed to the script
-if "%1"=="" (
+if "%~1"=="" (
     set "message=deploy"
 ) else (
-    set "message=%1"
+    set "message=%~1"
 )
 
 REM Step 7: Commit with the message
