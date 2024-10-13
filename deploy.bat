@@ -11,7 +11,7 @@ REM Step 3: Navigate to the smart-fire-system.github.io directory
 cd ../smart-fire-system.github.io
 
 REM Step 4: Copy all files from fire_alarm_system/build/web/*.* to the current directory with force replace
-xcopy /s /y /i ../fire_alarm_system/build/web/*.* .
+xcopy /s /y /i "../fire_alarm_system/build/web/*.*" .
 
 REM Step 5: Add all files to git
 git add .
