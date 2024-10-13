@@ -11556,21 +11556,22 @@ this.a=c},
 a6d:function a6d(){},
 a6e:function a6e(a){this.a=a},
 a6f:function a6f(a){this.a=a},
-aNb(a,b,c,d,e,f,g,h,i){return new A.BO(b,g,c,a,i,d,f,e,h,null)},
+aNb(a,b,c,d,e,f,g,h,i,j){return new A.BO(c,h,d,a,j,b,e,g,f,i,null)},
 aZI(){return new A.AY(new A.aiX(),A.B(t.K,t.Qu))},
 atH:function atH(a,b){this.a=a
 this.b=b},
-BO:function BO(a,b,c,d,e,f,g,h,i,j){var _=this
+BO:function BO(a,b,c,d,e,f,g,h,i,j,k){var _=this
 _.e=a
 _.f=b
 _.r=c
 _.CW=d
 _.cx=e
-_.k1=f
-_.k2=g
-_.k4=h
-_.ok=i
-_.a=j},
+_.id=f
+_.k1=g
+_.k2=h
+_.k4=i
+_.ok=j
+_.a=k},
 aiX:function aiX(){},
 alo:function alo(){},
 Hb:function Hb(){this.d=$
@@ -15181,7 +15182,7 @@ if(r==null)r=14
 s=A.cn(a,B.cf)
 s=s==null?null:s.gdd()
 if(s==null)s=B.am
-return A.aGp(B.M6,B.Mj,B.Mf,r*s.a/14)},
+return A.aGp(B.M6,B.Mj,B.Mg,r*s.a/14)},
 V9:function V9(a,b,c,d,e,f,g,h,i,j,k,l){var _=this
 _.c=a
 _.d=b
@@ -43056,7 +43057,7 @@ p=t.p
 o=A.a([A.eV(k,l.a.ax,20,new A.aBR(a),B.aw,k,k)],p)
 n=l.a
 m=n.f
-o.push(new A.ab(B.Mb,A.aP0(!0,B.er,!1,k,!0,B.av,k,A.b88(),k,k,k,k,k,k,2,n.e,B.ah,!0,k,!0,k,!1,k,B.eN,k,k,k,k,k,k,k,1,k,k,!1,"\u2022",k,l.ga7b(),k,k,k,!1,k,!1,k,!0,k,B.l2,k,k,B.dX,B.dc,k,k,k,k,k,k,m,B.be,k,B.GO,k,k,k,k),k))
+o.push(new A.ab(B.Mc,A.aP0(!0,B.er,!1,k,!0,B.av,k,A.b88(),k,k,k,k,k,k,2,n.e,B.ah,!0,k,!0,k,!1,k,B.eN,k,k,k,k,k,k,k,1,k,k,!1,"\u2022",k,l.ga7b(),k,k,k,!1,k,!1,k,!0,k,B.l2,k,k,B.dX,B.dc,k,k,k,k,k,k,m,B.be,k,B.GO,k,k,k,k),k))
 n=l.a.CW
 if(n.length===0)n=B.Lo
 else{n=A.a5(new A.ac(n,new A.aBS(l),A.a0(n).i("ac<1,f>")),!0,t.l7)
@@ -43283,7 +43284,7 @@ case 1:return A.m(q,r)}})
 return A.n($async$GA,r)},
 L(a){var s=this,r=t.Ds,q=A.a([A.b0k(new A.axD(s),t.m0)],r)
 r=A.a([A.z6(new A.axE(s),t.wt),A.z6(new A.axF(s),t.KM),A.z6(new A.axK(s),t.Bt),A.z6(new A.axL(s),t.gh),A.z6(new A.axM(s),t.d),A.z6(new A.axN(s),t.WU)],r)
-return A.b_8(A.b_6(A.aNb(new A.axO(s),null,"/welcome",s.d,new A.axP(s),B.Vs,A.aD(["/welcome",new A.axQ(),"/home",new A.axR(),"/login",new A.axG(),"/signup",new A.axH(),"/admins",new A.axI(),"/profile",new A.axJ()],t.N,t.Ab),B.WV,"Smart Fire System"),r),q)}}
+return A.b_8(A.b_6(A.aNb(new A.axO(s),B.m,null,"/welcome",s.d,new A.axP(s),B.Vs,A.aD(["/welcome",new A.axQ(),"/home",new A.axR(),"/login",new A.axG(),"/signup",new A.axH(),"/admins",new A.axI(),"/profile",new A.axJ()],t.N,t.Ab),B.WV,"Fire Alarm System"),r),q)}}
 A.axA.prototype={
 $0(){this.a.d=this.b},
 $S:0}
@@ -43687,12 +43688,11 @@ m=A.b20(m.f)
 p=$.aSP().Kd()
 o=A.aD(["name",n.c,"email",n.b,"phoneNumber",l,"countryCode",k,"role",m,"createdAt",new A.pR(p,p)],t.N,t.z)
 p=q.b
-p=A.azj(p,p.gxh().mJ("users"))
-n=p.iB(n.a)
-m=A.aPC(o)
-m.toString
+n=A.azj(p,p.gxh().mJ("users")).iB(n.a)
+p=A.aPC(o)
+p.toString
 s=2
-return A.t(n.a.iU(m,null),$async$pz)
+return A.t(n.a.iU(p,null),$async$pz)
 case 2:return A.m(null,r)}})
 return A.n($async$pz,r)}}
 A.a7A.prototype={
@@ -45627,7 +45627,7 @@ s=t.f
 r=A.a4(A.D("Smart Fire Alarm System",k,"app_name",A.a([],s),k),k,k,k,k,$.kS(),k,k)
 q=t.p
 r=A.kV(A.a([A.eV(k,B.cK,k,new A.auy(a),k,k,k)],q),k,r)
-p=A.nd("assets/images/logo.png",B.k3,k,k)
+p=A.nd("assets/images/logo_wide.jpg",B.k3,k,k)
 A.z(a,B.f,j).toString
 o=A.a4(A.D(u.am,k,"welcome_message",A.a([],s),k),k,k,k,k,$.aFR(),B.bs,k)
 n=$.mH()
@@ -45636,7 +45636,7 @@ m=A.D("Login",k,"login",A.a([],s),k)
 l=$.ha()
 m=A.dD(!1,A.a4(m,k,k,k,k,l,k,k),k,k,B.ac,k,k,k,k,new A.auz(a),k,n)
 A.z(a,B.f,j).toString
-return A.jc(r,k,A.ea(A.o4(new A.ab(B.aA,new A.eb(B.f0,A.du(A.a([new A.ab(B.Mh,p,k),new A.ab(B.l0,o,k),new A.ab(B.b1,m,k),new A.ab(B.b1,A.dD(!1,A.a4(A.D("Sign Up",k,"signup",A.a([],s),k),k,k,k,k,l,k,k),k,k,B.ac,k,k,k,k,new A.auA(a),k,n),k)],q),B.J,B.cV,B.Q),k),k),k,B.aK),k,k))}}
+return A.jc(r,B.m,A.ea(A.o4(new A.ab(B.aA,new A.eb(B.f0,A.du(A.a([new A.ab(B.Mb,p,k),new A.ab(B.l0,o,k),new A.ab(B.b1,m,k),new A.ab(B.b1,A.dD(!1,A.a4(A.D("Sign Up",k,"signup",A.a([],s),k),k,k,k,k,l,k,k),k,k,B.ac,k,k,k,k,new A.auA(a),k,n),k)],q),B.J,B.cV,B.Q),k),k),k,B.aK),k,k))}}
 A.auC.prototype={
 $2(a,b){if(b instanceof A.Fu)$.a3.R8$.push(new A.auB(a))
 else if(b instanceof A.wW)return this.a.a5_(a)
@@ -45736,7 +45736,7 @@ r.push(A.a4(A.D("Pleae wait while loading data",s,"wait_while_loading",A.a([],t.
 return A.aO3(!1,A.jc(s,B.m,A.ea(new A.ab(B.aA,A.du(r,B.J,B.cV,B.Q),s),s,s)),s,t.z)}}
 A.NB.prototype={
 L(a){var s=null
-return A.aNb(s,A.aO3(!1,A.jc(s,B.m,A.ea(new A.ab(B.aA,A.du(A.a([B.Nx,A.a4("No Internet Connection.",s,s,s,s,$.jB(),s,s)],t.p),B.J,B.cV,B.Q),s),s,s)),s,t.z),s,s,s,s,B.a_L,B.rJ,"Smart Fire System")}}
+return A.aNb(s,s,A.aO3(!1,A.jc(s,B.m,A.ea(new A.ab(B.aA,A.du(A.a([B.Nx,A.a4("No Internet Connection.",s,s,s,s,$.jB(),s,s)],t.p),B.J,B.cV,B.Q),s),s,s)),s,t.z),s,s,s,s,B.a_L,B.rJ,"Fire Alarm System")}}
 A.NC.prototype={
 L(a){var s,r,q,p,o,n=null,m=t.Y
 A.z(a,B.f,m).toString
@@ -51788,11 +51788,18 @@ $.aSs()
 if(s.CW!=null)k=new A.eC(new A.azD(j,b),i)
 k=new A.yH(o,k,B.ao,B.Y,i,i)
 return new A.DF(A.aaL(k,l,i,i,n),i)},
-a50(a){var s,r,q=this,p=null,o=q.a,n=o.e,m=o.f,l=o.r,k=o.cx
-o=o.k1
-s=q.gabX()
-r=q.a
-return new A.Fv(p,p,p,new A.azC(),p,p,p,p,p,n,m,p,p,l,B.UY,q.gac3(),k,p,B.ab2,B.iX,o,s,p,r.k4,r.ok,!1,!1,p,p,p,new A.q3(q,t.bT))},
+a50(a){var s,r,q,p,o,n,m=this,l=null,k=m.a,j=k.id
+if(j==null)s=l
+else s=j
+if(s==null)s=B.iX
+j=k.e
+r=k.f
+q=k.r
+p=k.cx
+k=k.k1
+o=m.gabX()
+n=m.a
+return new A.Fv(l,l,l,new A.azC(),l,l,l,l,l,j,r,l,l,q,B.UY,m.gac3(),p,l,B.ab2,s,k,o,l,n.k4,n.ok,!1,!1,l,l,l,new A.q3(m,t.bT))},
 L(a){var s,r=null,q=A.n4(!1,!1,this.a50(a),r,r,r,r,!0,r,r,r,new A.azE(),r,r)
 this.a.toString
 s=this.d
@@ -52604,7 +52611,7 @@ H(){return"_CardVariant."+this.b}}
 A.Lk.prototype={
 L(a){var s,r,q,p,o,n,m,l,k=null,j=A.a7(a).xr
 A.a7(a)
-switch(0){case 0:s=new A.awf(a,B.A,k,k,k,1,B.Mg,k)
+switch(0){case 0:s=new A.awf(a,B.A,k,k,k,1,B.Mh,k)
 break}r=s
 s=j.f
 if(s==null){s=r.f
@@ -53045,7 +53052,7 @@ if(c!=null)j=A.bX(h,h,j,!1,h,h,!1,!0,h,h,h,h,h,h,c,h,h,!0,h,h,h,h,h,h,h,h,h,h,!0
 return A.aLA(h,i.cx,j,h,i.cy,i.fr,h,i.fy,h)}}
 A.wg.prototype={
 L(a){var s=null
-return A.ahv(!1,s,!0,new A.ab(B.Md,this.d,s),s,!0,s,s,s,s,s,s,s,s,s,this.c,s,s,s,s)}}
+return A.ahv(!1,s,!0,new A.ab(B.Me,this.d,s),s,!0,s,s,s,s,s,s,s,s,s,this.c,s,s,s,s)}}
 A.A4.prototype={
 uf(a,b,c,d){var s=this.qz,r=s==null
 if((r?null:s.a)!==b){if(!r)s.l()
@@ -53077,7 +53084,7 @@ gc6(){return B.B},
 gcq(){return B.B},
 gfC(){return this.gMQ().f},
 guo(){return this.gMQ().z},
-gu2(){return B.Mc}}
+gu2(){return B.Md}}
 A.uy.prototype={
 gv(a){var s=this
 return A.bW([s.gcE(),s.b,s.gc6(),s.gcq(),s.e,s.f,s.gej(),s.gfC(),s.guo(),s.gu2(),s.z,s.Q,s.as])},
@@ -72519,39 +72526,39 @@ r=q.$2(s,this.a.go)
 if(r!=null)return r}return A.b5L(a,b)},
 TF(a){var s=this,r=s.Fg(a,s.a.go)
 if(!r.j(0,s.w))s.aw(new A.aDv(s,r))},
-L(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h={}
-h.a=null
-s=j.a
+L(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g={}
+g.a=null
+s=i.a
 s.toString
-if(j.gSd()){s=j.r
-r=j.gabv()
-q=j.a
+if(i.gSd()){s=i.r
+r=i.gabv()
+q=i.a
 p=q.ch
 p.toString
-h.a=A.aYK(!0,new A.Cm(r,j.gacO(),j.gadh(),p,"nav",B.acL,A.b7N(),!0,B.A,s),"Navigator Scope",!0,i,i,i,i)
-s=q}else{s=j.a
-s.toString}h.b=null
-o=new A.eC(new A.aDu(h,j),i)
-h.b=o
-o=A.mW(o,i,i,B.d0,!0,s.db,i,i,B.b6)
-h.b=o
-h=s.dx.a
-h=A.a_(255,h>>>16&255,h>>>8&255,h&255)
-r=s.dy
-if(r!=null)n=j.Fg(A.a([r],t.ss),j.a.go)
-else{r=j.w
-r.toString
-n=r}r=j.a.p2
-q=A.b27()
-p=A.np($.aU_(),t.u,t.od)
-p.n(0,B.mY,new A.DI(new A.b2(A.a([],t.ot),t.wS)).dY(a))
-m=A.aoH()
-l=t.a9
-k=A.a([],l)
-B.b.V(k,j.a.fr)
-k.push(B.JC)
-l=A.a(k.slice(0),l)
-return new A.DD(new A.E5(new A.dv(j.ga6h(),A.aI4(new A.NO(A.tH(p,A.aH4(new A.V4(new A.E6(new A.BG(n,l,new A.Vp(s.cx,h,o,i),i),i),i),m)),i),"<Default WidgetsApp Shortcuts>",q),i,t.w3),i),r,i)}}
+g.a=A.aYK(!0,new A.Cm(r,i.gacO(),i.gadh(),p,"nav",B.acL,A.b7N(),!0,B.A,s),"Navigator Scope",!0,h,h,h,h)
+s=q}else{s=i.a
+s.toString}g.b=null
+o=new A.eC(new A.aDu(g,i),h)
+g.b=o
+g.b=A.mW(o,h,h,B.d0,!0,s.db,h,h,B.b6)
+r=s.dx
+r=A.a_(255,r.gm()>>>16&255,r.gm()>>>8&255,r.gm()&255)
+g=g.b
+q=i.a.dy
+if(q!=null)n=i.Fg(A.a([q],t.ss),i.a.go)
+else{q=i.w
+q.toString
+n=q}q=i.a.p2
+p=A.b27()
+m=A.np($.aU_(),t.u,t.od)
+m.n(0,B.mY,new A.DI(new A.b2(A.a([],t.ot),t.wS)).dY(a))
+l=A.aoH()
+k=t.a9
+j=A.a([],k)
+B.b.V(j,i.a.fr)
+j.push(B.JC)
+k=A.a(j.slice(0),k)
+return new A.DD(new A.E5(new A.dv(i.ga6h(),A.aI4(new A.NO(A.tH(m,A.aH4(new A.V4(new A.E6(new A.BG(n,k,new A.Vp(s.cx,r,g,h),h),h),h),l)),h),"<Default WidgetsApp Shortcuts>",p),h,t.w3),h),q,h)}}
 A.aDt.prototype={
 $1(a){var s=this.a.a.Q
 s.toString
@@ -93302,7 +93309,7 @@ A.a7c.prototype={
 $0(){A.co(this.a.b,!0).eL()},
 $S:0}
 A.a7b.prototype={
-$1(a){this.b.push(A.fI(new A.ab(B.Me,a,null),1))},
+$1(a){this.b.push(A.fI(new A.ab(B.Mf,a,null),1))},
 $S:618}
 A.Ky.prototype={}
 A.tO.prototype={
@@ -97490,15 +97497,15 @@ B.M9=new A.aJ(16,4,16,4)
 B.l1=new A.aJ(16,8,16,20)
 B.b1=new A.aJ(16,8,16,8)
 B.Ma=new A.aJ(20,0,20,3)
-B.Mb=new A.aJ(24,0,24,0)
-B.Mc=new A.aJ(24,0,24,24)
-B.Md=new A.aJ(24,8,24,8)
+B.Mb=new A.aJ(20,0,20,50)
+B.Mc=new A.aJ(24,0,24,0)
+B.Md=new A.aJ(24,0,24,24)
+B.Me=new A.aJ(24,8,24,8)
 B.oP=new A.aJ(25,25,25,25)
-B.Me=new A.aJ(2,0,2,0)
-B.Mf=new A.aJ(4,0,4,0)
-B.Mg=new A.aJ(4,4,4,4)
+B.Mf=new A.aJ(2,0,2,0)
+B.Mg=new A.aJ(4,0,4,0)
+B.Mh=new A.aJ(4,4,4,4)
 B.ahw=new A.aJ(4,4,4,5)
-B.Mh=new A.aJ(50,0,50,50)
 B.Mi=new A.aJ(6,0,6,0)
 B.oR=new A.aJ(6,6,6,6)
 B.Mj=new A.aJ(8,0,8,0)
