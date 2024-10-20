@@ -28556,7 +28556,7 @@ case"unavailable":A.z(a,B.f,s).toString
 return A.H(u.fb,p,"unavailable",A.a([],r),p)
 case"data-loss":A.z(a,B.f,s).toString
 return A.H(u.W,p,"data_loss",A.a([],r),p)
-case"popup-closed":A.z(a,B.f,s).toString
+case"popup_closed":A.z(a,B.f,s).toString
 return A.H(k,p,l,A.a([],r),p)
 case"unauthenticated":A.z(a,B.f,s).toString
 return A.H(u.M,p,"unauthenticated",A.a([],r),p)
