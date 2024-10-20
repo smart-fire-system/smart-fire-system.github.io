@@ -28426,7 +28426,7 @@ if(b.length===0){A.z(a,B.f,t.Y).toString
 return A.H("Please enter your phone number",r,"enter_phone_number",A.a([],t.f),r)}s=A.cG("^[0-9]+$",!0,!1)
 if(!s.b.test(b)){A.z(a,B.f,t.Y).toString
 return A.H("Please enter a valid phone number",r,"valid_phone_number",A.a([],t.f),r)}return r},
-At(a,b){var s,r,q="Exception: ",p=null,o=u.gV,n=u.Y,m="network_request_failed",l="sign_in_cancelled",k="sign_in_required"
+At(a,b){var s,r,q="Exception: ",p=null,o=u.gV,n=u.Y,m="network_request_failed",l="cancelled",k=u.Z,j="sign_in_cancelled",i="sign_in_required"
 if(B.c.cf(b,q))b=B.c.m5(b,q,"")
 s=t.Y
 r=t.f
@@ -28521,15 +28521,15 @@ return A.H(u.bw,p,"user_mismatch",A.a([],r),p)
 case"no-signed-in-user":A.z(a,B.f,s).toString
 return A.H(u.d,p,"no_signed_in_user",A.a([],r),p)
 case"cancelled":A.z(a,B.f,s).toString
-return A.H(u.Z,p,"cancelled",A.a([],r),p)
+return A.H(k,p,l,A.a([],r),p)
 case"sign_in_failed":A.z(a,B.f,s).toString
 return A.H(u.e_,p,"sign_in_failed",A.a([],r),p)
 case"network_error":A.z(a,B.f,s).toString
 return A.H(n,p,m,A.a([],r),p)
 case"sign_in_cancelled":A.z(a,B.f,s).toString
-return A.H(u.d2,p,l,A.a([],r),p)
+return A.H(u.d2,p,j,A.a([],r),p)
 case"sign_in_required":A.z(a,B.f,s).toString
-return A.H(u.hd,p,k,A.a([],r),p)
+return A.H(u.hd,p,i,A.a([],r),p)
 case"invalid-argument":A.z(a,B.f,s).toString
 return A.H(u.a,p,"invalid_argument",A.a([],r),p)
 case"deadline-exceeded":A.z(a,B.f,s).toString
@@ -28556,6 +28556,8 @@ case"unavailable":A.z(a,B.f,s).toString
 return A.H(u.fb,p,"unavailable",A.a([],r),p)
 case"data-loss":A.z(a,B.f,s).toString
 return A.H(u.W,p,"data_loss",A.a([],r),p)
+case"popup-closed":A.z(a,B.f,s).toString
+return A.H(k,p,l,A.a([],r),p)
 case"unauthenticated":A.z(a,B.f,s).toString
 return A.H(u.M,p,"unauthenticated",A.a([],r),p)
 default:A.z(a,B.f,s).toString
